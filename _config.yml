@@ -24,8 +24,10 @@ github_username:  fhpraw
 
 # Build settings
 markdown: kramdown
+# Uncomment theme for offline testing
+# Uncomment remote_theme for github pages
+# theme: jekyll-whiteglass
 remote_theme: yous/whiteglass
-#theme: jekyll-whiteglass
 plugins:
   - jekyll-feed
   - jekyll-archives
