@@ -24,7 +24,8 @@ github_username:  fhpraw
 
 # Build settings
 markdown: kramdown
-theme: jekyll-whiteglass
+remote_theme: yous/whiteglass
+#theme: jekyll-whiteglass
 plugins:
   - jekyll-feed
   - jekyll-archives
