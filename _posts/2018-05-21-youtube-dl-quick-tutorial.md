@@ -3,6 +3,7 @@ layout: post
 title:  "youtube-dl Quick Tutorial"
 date:   2018-05-21 19:41:00 +0700
 categories: python tutorial
+description: youtube-dl quick tutorial, download all videos on youtube channel, download bulk of youtube links
 ---
 
 How To Install on Ubuntu:
