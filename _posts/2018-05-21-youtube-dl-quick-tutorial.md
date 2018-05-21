@@ -6,18 +6,21 @@ categories: python tutorial
 ---
 
 How To Install on Ubuntu:
-
-    sudo apt-get install youtube-dl
+``` sh
+sudo apt-get install youtube-dl
+```
 
 How To Use:
 
 Simple Download
-    
-    youtube-dl <youtube-links>
+``` sh
+youtube-dl <youtube-links>
+```
 
 Download spesific formats
-
-    youtube-dl --list-formats <youtube-links>
+``` sh
+youtube-dl --list-formats <youtube-links>
+```
 
 the output sample usually like this:
 
@@ -44,13 +47,14 @@ the output sample usually like this:
     18           mp4        640x360    medium ,  mp4a.40.2, avc1.42001E (best)
 
 Then if you want to download the spesific formats, choose it by typing the format code like this:
-
-    youtube-dl -f <format code> <youtube-links>
-
+``` sh
+youtube-dl -f <format code> <youtube-links>
+```
 Download with list of youtube links
-
-    youtube-dl -a list-of-youtube-links.txt
-
+``` sh
+youtube-dl -a list-of-youtube-links.txt
+```
 Download the entire channel
-    
-    youtube-dl -f best -citw -v <url-of-youtube-channel>
+``` sh    
+youtube-dl -f best -citw -v <url-of-youtube-channel>
+```
