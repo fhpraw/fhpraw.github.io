@@ -18,7 +18,7 @@ I think all of you guys should learn their culture. Taking care each other, no b
 
 I live with my lovely mom and dad at small house, downtown. They take care of me, even at almost my third decades. what am I doing??? Of course, I do my part, being a good son, make some cash, supporting our needs even it considered a little help.
 
-I know it, I am struggling to make my dreams come true. Some of you are lucky, it's easy to make ten grands annually, but not me. I stuck at 100 bucks a month, can you imagine that. So that, makes me hard to get marry with someone I love. She is kind, beautiful, shy, a good teacher at university. But, unfortunately, she dumps me, sad.
+I knew it, I am struggling to make my dreams come true. Some of you are lucky, it's easy to make ten grands annually, but not me. I stuck at 100 bucks a month, can you imagine that. So that, makes me hard to get marry with someone I love. She is kind, beautiful, shy, a good teacher at university. But, unfortunately, she dumps me, sad.
 
 Chance to meet different people is rare enough. I sit on the chair, face to the monitor, meet the same person, every single day. repeat...
 
@@ -27,6 +27,3 @@ Hopefully, I meet a beautiful Japanese Wife (you guys don't be such a weaboo). I
 ## What am I doing
 
 Push some random codes on github, checking messages, emails, do stuff in front of desk, meet same people, meet some rascal students, but there are kindly students too. Being nice with boss and his guest, having fun with my team at office. Make new story and experience, having a new skills like programming, design, organize my workspace, adapting with different people, multitasking job, and bunch of new things. This is an era of difficult life. You couldn't eat if you don't want do many things at the same time. 
-
-
-> Selamat Membaca !!! (I speak in bahasa now)
