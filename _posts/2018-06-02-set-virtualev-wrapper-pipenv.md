@@ -82,3 +82,6 @@ pipenv install <packages>
 ```
 It will create _virtual environment_ for your project and _pipfile_. _Pipfile_ is a text file contains list of pip package names which is used by your current project. This pipfile is useful when you want to deploy your project to another machine. You don't have to remember what packages are needed, pipfile help remember it for you.
 > Further explanation about pipenv  and pipfile will come soon. Actually, I still learn how to use it, to get the most advantages of its features.
+
+## Reference
+- [Pipenv & Virtual Environments](http://docs.python-guide.org/en/latest/dev/virtualenvs/)
