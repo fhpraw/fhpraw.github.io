@@ -7,6 +7,7 @@ description: youtube-dl quick tutorial, download all videos on youtube channel, 
 ---
 
 How To Install on Ubuntu:
+
 ``` sh
 sudo apt-get install youtube-dl
 ```
@@ -14,11 +15,13 @@ sudo apt-get install youtube-dl
 How To Use:
 
 Simple Download
+
 ``` sh
 youtube-dl <youtube-links>
 ```
 
 Download spesific formats
+
 ``` sh
 youtube-dl --list-formats <youtube-links>
 ```
@@ -40,22 +43,27 @@ the output sample usually like this:
     242          webm       300x240    DASH video  170k , vp9, 1fps, video only, 2.50MiB
     133          mp4        300x240    DASH video  247k , avc1.4d400d, 25fps, video only, 4.11MiB
     243          webm       400x320    DASH video  288k , vp9, 1fps, video only, 4.07MiB
-    13           3gp        unknown    small 
+    13           3gp        unknown    small
     17           3gp        176x144    small ,  mp4a.40.2, mp4v.20.3
     36           3gp        320x240    small ,  mp4a.40.2, mp4v.20.3
-    5            flv        400x240    small 
+    5            flv        400x240    small
     43           webm       640x360    medium ,  vorbis, vp8.0
     18           mp4        640x360    medium ,  mp4a.40.2, avc1.42001E (best)
 
 Then if you want to download the spesific formats, choose it by typing the format code like this:
+
 ``` sh
 youtube-dl -f <format code> <youtube-links>
 ```
+
 Download with list of youtube links
+
 ``` sh
 youtube-dl -a list-of-youtube-links.txt
 ```
+
 Download the entire channel
-``` sh    
+
+``` sh
 youtube-dl -f best -citw -v <url-of-youtube-channel>
 ```

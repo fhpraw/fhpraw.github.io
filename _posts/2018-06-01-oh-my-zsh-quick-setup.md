@@ -7,20 +7,25 @@ description: zsh, setup oh-my-zsh, how to install and configure oh-my-zsh
 ---
 
 First Install _zsh_ (on Ubuntu):
+
 ``` sh
 sudo apt install zsh
 ```
 
 and then, install _oh-my-zsh_:
+
 ``` sh
 sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 ```
+
 What is [oh-my-zsh](http://ohmyz.sh) ? It is a zsh customizer framework, you can add plugins or themes, or whatever you can.
 
 and then, install _antigen_ (make sure curl is available):
+
 ``` sh
 curl -L git.io/antigen > ~/.antigen.zsh
 ```
+
 What is [antigen](http://antigen.sharats.me) ? It is plugin manager for zsh. You can install any plugin you want in easiest way.
 
 Finally, edit `.zshrc` to install or load some plugin for your _zsh_. With oh-my-zsh installed, you already have hundreds plugins installed. But they must be activated or loaded by _antigen_. Append these lines into `.zshrc`:
@@ -82,5 +87,5 @@ antigen bundle zsh-users/zsh-completions
 antigen apply
 ```
 
-Lastly, save and restart your _terminal_ 
+Lastly, save and restart your _terminal_
 > Quit terminal session and open it again, if you want to add plugin outside oh-my-zsh plugins, then internet connection is needed for installation process.
