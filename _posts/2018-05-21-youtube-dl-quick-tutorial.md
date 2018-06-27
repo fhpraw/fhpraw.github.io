@@ -62,6 +62,12 @@ Download with list of youtube links
 youtube-dl -a list-of-youtube-links.txt
 ```
 
+Download entire videos on the playlist
+
+```sh
+youtube-dl -cit <youtube-playlist-link>
+```
+
 Download the entire channel
 
 ``` sh
