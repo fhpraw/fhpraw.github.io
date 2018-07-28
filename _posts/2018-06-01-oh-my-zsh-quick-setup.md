@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "oh-my-zsh Quick setup"
-date: 2018-06-01 23:07:00 +0700
+title: "oh-my-zsh Quick Setup on Ubuntu"
+date: 2018-07-28 17:07:00 +0700
 categories: zsh tutorial
 description: zsh, setup oh-my-zsh, how to install and configure oh-my-zsh
 ---
 
-First Install _zsh_ (on Ubuntu):
+First Install _zsh_:
 
 ``` sh
 sudo apt install zsh
@@ -32,8 +32,6 @@ Finally, edit `.zshrc` to install or load some plugin for your _zsh_. With oh-my
 > Actually this is my personal custom, most of plugins already available inside `~/.oh-my-zsh/plugins/`, it won't need internet connection. Choose plugins which only what you need
 
 ``` sh
-source ~/.antigen.zsh
-
 # Load Antigen
 source ~/.antigen.zsh
 
@@ -43,6 +41,13 @@ antigen use oh-my-zsh
 # Load the theme
 antigen theme robbyrussell
 
+
+# Load other plugins (these plugins installation need internet connection)
+# ------------------------------
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle zsh-users/zsh-completions
+
 # Load oh-my-zsh's plugins below
 # ------------------------------
 # Productivity
@@ -51,37 +56,6 @@ antigen bundle colorize
 antigen bundle command-not-found
 antigen bundle cp
 antigen bundle man
-antigen bundle tmux
-antigen bundle ubuntu
-antigen bundle vundle
-
-# Build tools
-antigen bundle git
-
-
-# Ruby plugins
-antigen bundle bundler
-antigen bundle gem
-antigen bundle ruby
-
-# Python plugins
-antigen bundle pip
-antigen bundle pylint
-antigen bundle python
-antigen bundle virtualenv
-antigen bundle virtualenvwrapper
-
-# Node plugins
-antigen bundle node
-antigen bundle npm
-antigen bundle nvm
-antigen bundle lukechilds/zsh-nvm
-
-# Load other plugins
-# ------------------------------
-antigen bundle zsh-users/zsh-syntax-highlighting
-antigen bundle zsh-users/zsh-autosuggestions
-antigen bundle zsh-users/zsh-completions
 
 # Tell antigen that you're done
 antigen apply
