@@ -4,8 +4,8 @@ title: "About"
 permalink: /about/
 ---
 
-My name is **Fajar Hari Prabowo**, Long name huh!? It might be really hard to pronounce, so never mind.
+Hello, my name is **Fajar Hari Prabowo**,
 
-I just want to transfer my memories into digital scripts, forever, here. This keeping me on track for finding some materials, such as tutorials, messages, poetries, or whatever it is which I can't memorize them all but they are important.
+I work at University, as a clerk, do administration office related things. I do all kind of work there like writing, taking picture, drawing, programming, lifting, cleaning, tidying, driving,  thinking, planning, commanding, slaving, get ignoring, littering, loitering, lollygaging, attending, meeting, doing useless things, killing your career thing if you keep sticking on daily routine, not improving.
 
-Sometimes I write in [Bahasa](https://en.wikipedia.org/wiki/Indonesian_language), some of you guys can't understand, only Indonesian folks know the meaning.
+Thank God, I am allowed to do programming in office hour.
