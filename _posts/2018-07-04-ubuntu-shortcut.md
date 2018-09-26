@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Xubuntu Shortcut"
+title:  "Ubuntu Shortcut"
 date:   2018-07-04 11:29:00 +0700
-categories: xubuntu tutorial
+categories: ubuntu tutorial
 ---
 
 **Switching between Apps**
