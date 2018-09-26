@@ -78,6 +78,18 @@ mkdir -p "$(rbenv root)"/plugins
 git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
 ```
 
+# Install rbenv using rbenv-installer
+
+There is another alternative for installing rbenv, which is using rbenv-installer
+
+```sh
+# with curl
+curl -fsSL https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-installer | bash
+
+# alternatively, with wget
+wget -q https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-installer -O- | bash
+```
+
 # Finally, you can install ruby
 
 ```sh
