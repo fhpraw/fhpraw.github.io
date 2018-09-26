@@ -18,7 +18,7 @@ then install _virtualenv_, _virtualenvwrapper_, _pipenv_:
 pip install --user virtualenv virtualenvwrapper pipenv
 ```
 
-after installing them, append some lines below into `.zshrc`:
+after installing them, append some lines below into `.zshrc` or `bashrc`:
 
 ``` sh
 
