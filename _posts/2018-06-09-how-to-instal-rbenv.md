@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "How To Install rbenv on Ubuntu"
-date:   2018-07-28 17:41:00 +0700
+title:  "How To Install rbenv on Ubuntu in Simple Way"
+date:   2018-10-19 21:41:00 +0700
 categories: ruby tutorial
 description: how to install rbenv for managing many versions of ruby
 ---
@@ -10,72 +10,12 @@ description: how to install rbenv for managing many versions of ruby
 
 it is a simple ruby version manager that won't hurt your root system.
 
-# Install rbenv
-
-1. Clone rbenv into `~/.rbenv`
-
-    ```sh
-    git clone https://github.com/rbenv/rbenv.git ~/.rbenv
-    ```
-
-2. Add `~/.rbenv/bin` to your `$PATH` for access to the `rbenv` command-line utility
-
-    - for zsh:
-
-        ```sh
-        echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zshrc
-        ```
-
-3. Set up rbenv in your shell
-
-    ```sh
-    ~/.rbenv/bin/rbenv init
-    ```
-
-4. Set up rbenv hooks into your shell
-    1. Sets up your shims path, add `~/.rbenv/shims` to your `PATH`
-
-         ```sh
-         export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
-         ```
-
-    2. Install autocompletion (for zsh)
-
-         ```sh
-         ~/.rbenv/completions/rbenv.zsh
-         ```
-
-    3. Rehashes shims
-
-        ```sh
-        rbenv rehash
-        ```
-
-    4. Run
-
-         ```sh
-         rbenv init -
-         ```
-
-Close your terminal emulator then open again.
-
 # Prerequisite before installing (building) ruby using rbenv
 
-I actually use ubuntu, so install these
+These are dependencies required for building ruby from source file. Install them:
 
 ```sh
 sudo apt install autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm5 libgdbm-dev
-```
-
-these are dependencies required for building ruby from source file.
-
-# Install ruby-build
-
-Install ruby-build as an rbenv plugin
-
-```sh
-mkdir -p "$(rbenv root)"/plugins
-git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
 ```
 
 # Install rbenv using rbenv-installer
@@ -90,24 +30,43 @@ curl -fsSL https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-install
 wget -q https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-installer -O- | bash
 ```
 
-# Finally, you can install ruby
+Add this script into .zshrc or .bashrc:
 
 ```sh
-rbenv install <version of ruby>
+  # rbenv config
+  export PATH="$HOME/.rbenv/bin:$PATH"
+  eval "$(rbenv init -)"
 ```
 
-for example
-
-```sh
-rbenv install 2.5.1
-```
-
-to list available versions of ruby:
+Close and open terminal again. To list available versions of ruby:
 
 ```sh
 rbenv install --list | less
 ```
 
+To make sure rbenv has been installed properly, use rbenv-doctor:
+
+```sh
+wget -q https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-doctor -O- | bash
+```
+
+# Finally, you can install ruby (globally)
+
+```sh
+rbenv install <version of ruby>
+rbenv global <version of installed ruby>
+```
+
+for example ruby v2.5.1, then
+
+```sh
+rbenv install 2.5.1
+rbenv global 2.5.1
+```
+
+and, done. Congratulation, you officially has installed rbenv and ruby successfully !
+
 Reference:
 
 - [rbenv](https://github.com/rbenv/rbenv)
+- [rbenv-installer](https://github.com/rbenv/rbenv-installer)
