@@ -1,70 +1,54 @@
 ---
 layout: post
-title:  "Useful Linux CLI"
-date:   2018-06-09 20:41:00 +0700
-categories: cli tutorial
-description: a collections of useful cli in linux
+title: "Useful Linux CLI with tldr"
+date: 2018-10-20 09:41:00 +0700
+categories: cli tutorial tldr
+description: cli, tutorial, tldr 
 ---
-show total size of filename or directory
+
+Just use tldr, install via npm
 
 ```sh
-du -sh filename
-du -sh dirname
+$ npm install -g tldr
 ```
 
-compress files into zip archive
+How do we use it?
 
 ```sh
-zip archive.zip file0 file1 file3
-
-# using regex
-zip c_source.zip "*.[ch]"
-
-# adding file into zip archive
-zip -r archive.zip file4
+$ tldr [command]
 ```
 
-extract zip file into directory
+example
 
 ```sh
-unzip archive.zip -d <destination dir>
-
-# list filenames inside archive.zip
-unzip -l archive.zip
+$ tldr cp
 ```
 
-compress file into tar archive
+the output:
 
-```sh
-# into tar
-tar -cvf archive.tar dirname
+```txt
+  cp
 
-# into tar.gz or tgz
-tar cvzf archive.tgz dirname
+  Copy files and folders.
 
-# into tar.bz2 or tbz
-tar cvfj archive.tbz
-```
+  - Copy a file to another location:
+    cp path/to/file.ext path/to/copy.ext
 
-uncompress tar archive
+  - Copy a file into another folder, keeping the filename:
+    cp path/to/file.ext path/to/target/parent/folder
 
-```sh
-tar -xvf archive.tar -C destination_dir
-tar -xvf archive.tgz -C destination_dir
-tar -xvf archive.tbz -C destination_dir
+  - Copy a folder recursively to another location:
+    cp -r path/to/folder path/to/copy
 
-# list content
-tar -tvf archive.tar
-```
+  - Copy a folder recursively into another folder, keeping the folder name:
+    cp -r path/to/folder path/to/target/parent/folder
 
-play mp3 (need [vlc](https://www.videolan.org/))
+  - Copy a folder recursively, in verbose mode (shows files as they are copied):
+    cp -vr path/to/folder path/to/copy
 
-```sh
-nvlc file.mp3
+  - Copy the contents of a folder into another folder:
+    cp -r path/to/source/folder/* path/to/target/folder
 
-# interactive player with random play
-nvlc --random /path/to/your/mp3/folder
-
-# no interface with random play
-cvlc --random /path/to/your/mp3/folder
+  - Copy text files to another location, in interactive mode (prompts user before overwriting):
+    cp -i *.txt path/to/source/
 ```
