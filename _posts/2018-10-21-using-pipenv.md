@@ -39,5 +39,12 @@ pipenv shell
 
 To deactivate,
 ```sh
-deactivate
+exit
+```
+
+To delete virtualenv,
+
+```sh
+cd your_project_folder
+pipenv --rm
 ```
