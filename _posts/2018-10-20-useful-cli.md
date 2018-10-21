@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Useful Linux CLI with tldr"
+title: "Useful Linux CLI"
 date: 2018-10-20 09:41:00 +0700
 categories: cli tutorial tldr
 description: cli, tutorial, tldr 
 ---
 
-Just use tldr, install via npm
+Just use tldr, install it via npm
 
 ```sh
 $ npm install -g tldr

@@ -1,14 +1,12 @@
 ---
 layout: post
-title:  "How To Install rbenv on Ubuntu in Simple Way"
+title:  "How To Install rbenv"
 date:   2018-10-19 21:41:00 +0700
 categories: ruby tutorial
 description: how to install rbenv for managing many versions of ruby
 ---
 
-# What is rbenv
-
-it is a simple ruby version manager that won't hurt your root system.
+_rbenv_ it is a simple ruby version manager that won't hurt your root system.
 
 # Prerequisite before installing (building) ruby using rbenv
 

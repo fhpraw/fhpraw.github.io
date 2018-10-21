@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "ZSH Quick Setup on Ubuntu"
+title: "ZSH Quick Setup"
 date: 2018-10-19 23:07:00 +0700
 categories: zsh tutorial
 description: zsh, oh-my-zsh, zplug, how to install
