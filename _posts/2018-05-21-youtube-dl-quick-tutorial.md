@@ -12,6 +12,17 @@ How To Install on Ubuntu:
 sudo apt-get install youtube-dl
 ```
 
+However, ubuntu repository seems always outdated. So, I usually installing it using pip (plus virtual environment) instead. I decide to create python virtual environment to avoid breaking root system. I prefer to use pipenv (pip + virtualenv) to make it simple installation.
+
+``` sh
+mkdir ytdl
+cd ytdl
+pipenv install youtube-dl
+pipenv shell
+```
+
+then, you can invoke youtube-dl right on the virtual environment shell.
+
 How To Use:
 
 Simple Download
@@ -20,13 +31,26 @@ Simple Download
 youtube-dl <youtube-links>
 ```
 
-Download spesific formats
+The last version of youtube-dl also can download entire playlist:
+```sh
+youtube-dl <youtube-playlist-links>
+```
+
+or channel
+
+```sh
+youtube-dl <youtube-channel-links>
+```
+
+and youtube-dl will download all videos automatically in best format for you.
+
+Sometimes you want to download spesific formats, then spesify it first
 
 ``` sh
 youtube-dl --list-formats <youtube-links>
 ```
 
-the output sample usually like this:
+the output sample usually looks like this:
 
     [youtube] vKtwZmhX0lw: Downloading webpage
     [youtube] vKtwZmhX0lw: Downloading video info webpage
@@ -53,22 +77,24 @@ the output sample usually like this:
 Then if you want to download the spesific formats, choose it by typing the format code like this:
 
 ``` sh
-youtube-dl -f <format code> <youtube-links>
+youtube-dl -f <format-code> <youtube-links>
 ```
 
-Download with list of youtube links
+If you want to download with list of youtube links which is stored on textfile:
 
 ``` sh
 youtube-dl -a list-of-youtube-links.txt
 ```
 
-Download entire videos on the playlist
+and these two commands below are for persons who like things in detail:
+
+Download entire videos on the playlist (for outdated youtube-dl)
 
 ```sh
 youtube-dl -cit <youtube-playlist-link>
 ```
 
-Download the entire channel
+Download the entire channel (for outdated youtube-dl)
 
 ``` sh
 youtube-dl -f best -citw -v <url-of-youtube-channel>
