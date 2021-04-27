@@ -129,3 +129,10 @@ edit `/etc/sudoers` and uncomment this to allow wheel group execute as root:
 ```
 
 ## Reboot
+
+Back to installer root and Reboot
+
+```shell
+exit
+reboot
+```
