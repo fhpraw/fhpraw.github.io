@@ -37,7 +37,7 @@ swapon /dev/sda2
 ## Install minimum packages
 
 ```shell
-pacstrap /mnt base base-devel linux linux-firmware vi
+pacstrap /mnt base base-devel linux linux-firmware vi networkmanager grub efibootmgr
 ```
 
 ## Generate fstab
@@ -59,12 +59,6 @@ arch-chroot /mnt
 ```shell
 ln -sf /usr/share/zoneinfo/[Region]/[City] /etc/localtime
 hwclock --systohc
-```
-
-## Install some necessary packages
-
-```shell
-pacman -S networkmanager grub efibootmgr
 ```
 
 ## Set Localization
