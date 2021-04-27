@@ -30,7 +30,6 @@ mkfs.ext4 /dev/sda3
 ```shell
 mount /dev/sda3 /mnt
 mkdir /mnt/efi
-mkdir /mnt/home
 mount /dev/sda1 /mnt/efi
 swapon /dev/sda2
 ```
