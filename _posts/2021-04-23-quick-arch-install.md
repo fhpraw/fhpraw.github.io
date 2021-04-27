@@ -37,7 +37,7 @@ swapon /dev/sda2
 ## Install minimum packages
 
 ```shell
-pacstrap /mnt base base-devel linux linux-firmware
+pacstrap /mnt base base-devel linux linux-firmware vi
 ```
 
 ## Generate fstab
@@ -64,7 +64,7 @@ hwclock --systohc
 ## Install some necessary packages
 
 ```shell
-pacman -S neovim networkmanager grub efibootmgr
+pacman -S networkmanager grub efibootmgr
 ```
 
 ## Set Localization
