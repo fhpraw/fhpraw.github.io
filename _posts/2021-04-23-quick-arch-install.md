@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Minimal Arch Linux Installation"
-date:   2021-04-23 22:37:00 +0700
+date:   2021-04-27 11:37:00 +0700
 categories: guide
 ---
 
